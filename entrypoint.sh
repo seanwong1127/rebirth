@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # open virtual desktop
-xvfb-run --listen-tcp --server-num=76 --server-arg="-screen 0 2048x1024x24" --auth-file=$XAUTHORITY node index.js &
+xvfb-run  -e /dev/stdout --listen-tcp  --auto-servernum --server-num=76 --server-arg="-screen 0 2048x1024x24" --auth-file=$XAUTHORITY node index.js &
 
 # xvfb-run startup takes some time, waiting for a while
 sleep 5s
