@@ -18,10 +18,10 @@ export const captureConfig = (width: number, height: number) => ({
 export const mediaRecorderOptions = {
   audioBitsPerSecond: 128000,
   videoBitsPerSecond: 2500000,
-  mimeType: 'video/mp4;codecs=h264'
+  mimeType: 'video/webm;codecs=h264'
 };
 
 // Blob Config
 export const blobOptions = {
-  type: 'video/mp4'
+  type: 'video/webm'
 };
