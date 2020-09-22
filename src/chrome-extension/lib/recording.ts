@@ -51,7 +51,7 @@ const start = (id: number, pageWidth: number, pageHeight: number): void => {
       // see: https://bugs.chromium.org/p/chromium/issues/detail?id=892133#makechanges
       const link = document.createElement('a');
       link.href = URL.createObjectURL(superBuffer);
-      link.setAttribute('download', `${fileName}.webm`);
+      link.setAttribute('download', `${fileName}.mp4`);
       link.click();
 
       fileDownloadDone(fileName)
