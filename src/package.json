@@ -7,8 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "build:watch": "npm run eslint && cross-env NODE_ENV=development webpack --config webpack.config.js --watch",
-    "build": "npm run eslint && cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build:watch": "cross-env NODE_ENV=development webpack --config webpack.config.js --watch",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "eslint": "eslint --fix --ext .ts chrome-extension"
   },
   "repository": {
