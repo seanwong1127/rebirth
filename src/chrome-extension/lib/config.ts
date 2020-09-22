@@ -8,8 +8,8 @@ export const captureConfig = (width: number, height: number) => ({
       minHeight: height,
       maxWidth: width,
       maxHeight: height,
-      maxFrameRate: 30,
-      minFrameRate: 30,
+      maxFrameRate: 25,
+      minFrameRate: 25,
     }
   }
 });
