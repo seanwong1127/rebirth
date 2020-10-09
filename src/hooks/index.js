@@ -30,7 +30,7 @@ module.exports = {
         });
         resolve();
       })
-      .outputOptions(['-fflags +genpts', '-max_muxing_queue_size 99999', '-r 30', '-crf 20'])
+      .outputOptions(['-fflags +genpts', '-max_muxing_queue_size 99999', '-vcodec copy'])
       .save(outputFile);
     });
   }
